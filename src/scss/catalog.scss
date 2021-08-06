@@ -1,0 +1,137 @@
+.catalog {
+  &__content {
+    display: none; /* по умолчанию прячем все блоки */
+    &_active {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+
+    }
+  }
+
+  &__title {
+    @include text($Museo, 700, 30px, #0D0D0D);
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  &__caption {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    column-gap: 10px;
+    margin-bottom: 60px;
+  }
+
+  &__list {
+    width: 220px;
+    height: 50px;
+    transform: skew(-20deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #D0D0D0;
+    &-text {
+      transform: skew(20deg);
+      @include text($Museo, 500, 18px, #6B6B6B);
+    }
+    &_active {
+      background: #C70101;
+      border: transparent;
+      .catalog__list-text {
+        @include text($Museo, 500, 18px, #ffffff);
+      }
+    }
+
+  }
+  &__card{
+    padding: 20px;
+    border: 2px solid #E8E8E8;
+    width: calc(33.3% - 13.33px);
+    overflow: hidden;
+
+
+    &-top{
+      display: flex;
+      width: calc(200% + 40px);
+      transition: 0.5s;
+      &_active{
+        transform: translateX(-50%);
+        transition: 0.5s;
+      }
+    }
+    &-front{
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 18px;
+      padding-right: 20px;
+
+    }
+    &-img{
+      margin-bottom: 17px;
+    }
+    &-title{
+      @include text($Museo, 700, 16px, #0d0d0d);
+      margin-bottom: 16px;
+    }
+    &-descr{
+      @include text($Museo, 300, 14px, #0d0d0d);
+      text-align: center;
+      margin-bottom: 17px;
+    }
+    &-more{
+      @include text($Museo, 500, 14px,  #C70101);
+    }
+    &-bottom{
+      border-top: 1px solid #707070 ;
+      padding-top: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &-btn{
+      width: 130px;
+      height: 40px;
+      background-color: #C70101;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      @include text($Museo, 500, 14px, #ffffff);
+    }
+    &-oldPrice{
+      @include text($Museo, 300, 14px, #555555);
+      text-decoration: line-through;
+    }
+    &-newPrice{
+      @include text($Museo, 700, 20px, #050505);
+
+    }
+    &-back{
+      width: 50%;
+      padding-right: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 19px;
+    }
+    &-prev{
+      @include text($Museo, 500, 14px,  #C70101);
+    }
+    &-menu{
+      margin-left: 20px;
+      display: flex;
+      flex-direction: column;
+      row-gap: 15px;
+      list-style-type: square;
+      color: #C70101;
+    }
+    &-list-text{
+      @include text($Museo, 300, 14px, #555555);
+    }
+  }
+
+}

@@ -1,0 +1,9 @@
+@charset "UTF-8";
+.catalog .tabs__content {
+  display: none;
+  /* по умолчанию прячем все блоки */
+}
+.catalog .tabs__content.active {
+  display: block;
+  /* по умолчанию показываем нужный блок */
+}

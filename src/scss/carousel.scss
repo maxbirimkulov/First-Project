@@ -1,0 +1,28 @@
+.carousel{
+  padding: 81px 0 73px;
+  .owl-carousel{
+    position: relative;
+  }
+  .owl-carousel .owl-item img{
+    width: 750px;
+    margin: 0 auto;
+  }
+  .owl-nav .owl-prev{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 50px;
+    background: url("../image/carousel/chevron-left-solid.png");
+  }
+  .owl-nav .owl-next{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 50px;
+    background: url("../image/carousel/chevron-right-solid.png");
+  }
+}

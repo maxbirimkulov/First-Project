@@ -1,0 +1,17 @@
+.consultation{
+  padding: 100px 0 92px;
+  background: url("../image/consultation/bg2.svg") center/cover no-repeat ;
+  &__title{
+    @include text($Museo, 700, 36px, #ffffff);
+    margin-bottom: 70px;
+  }
+  &__subtitle{
+    @include text($Museo, 500, 20px, #ffffff);
+    margin-bottom: 36px;
+  }
+
+
+  &__btn{
+    margin: 5px 0 0 0;
+  }
+}

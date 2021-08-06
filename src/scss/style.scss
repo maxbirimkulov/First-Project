@@ -1,0 +1,31 @@
+@import "../font/Museo/stylesheet.css";
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  max-width: 940px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+$Museo : "Museo Sans Rounded", sans-serif;
+@import "text";
+
+
+
+
+@import "button";
+@import "form";
+@import "header";
+@import "first-screen";
+@import "advantages";
+@import "consultation";
+@import "carousel";
+@import "catalog";
+@import "footer";
+@import "popup";
+

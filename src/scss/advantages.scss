@@ -1,0 +1,30 @@
+.advantages{
+  padding :60px 0 75px;
+  &__title{
+    @include text($Museo, 700 , 30px, #000000);
+    margin-bottom: 60px;
+    text-align: center;
+  }
+  &__row{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 60px;
+  }
+  &__item{
+    text-align: center;
+    &-icon{
+margin-bottom: 32px;
+    }
+    &-title{
+      @include text($Museo, 700 , 18px, #000000);
+      margin-bottom: 20px;
+    }
+    &-text{
+      @include text($Museo, 300 , 14px, #000000);
+    }
+    &-link{
+      color:red;
+    }
+  }
+
+}

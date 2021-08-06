@@ -1,0 +1,44 @@
+.first-screen{
+  padding: 166px 0 77px;
+  height: 100vh;
+  background: url("../image/first-screen/bg.png") center/cover no-repeat;
+  &__title{
+    @include text($Museo, 500, 42px, #ffffff);
+    text-align: right;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+  &__subtitle{
+    @include text($Museo, 500, 24px, #ffffff);
+    text-align: right;
+    text-transform: uppercase;
+    margin-bottom: 64px;
+  }
+  &__info{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    column-gap: 70px;
+    margin-bottom: 66px;
+    &-item{
+      text-align: center;
+    }
+    &-icon{
+      margin-bottom: 20px;
+    }
+    &-text{
+      @include text($Museo, 500, 14px, #ffffff);
+    }
+  }
+  &__go{
+    margin-top: 18px;
+    text-align: right;
+    @include text($Museo, 500, 16px, #ffffff);
+  }
+  &__link{
+    margin-left: 4px;
+    color: white;
+  }
+
+
+}
